@@ -99,7 +99,7 @@ export default function Home() {
       <div className=" flex flex-row flex-wrap h-auto min-h-screen w-full justify-center items-center">
         {task.options.map(eachOption => {
 
-          return <div onClick={handleOptionSubmit}> <img id={eachOption.id.toString()} style={{ maxWidth: '600px', marginTop: '10px', margin: '5px', objectFit: 'contain' }} alt='images uploaded by user' src={eachOption.image_url} /></div>
+          return <div key={eachOption.id} onClick={handleOptionSubmit}> <img id={eachOption.id.toString()} style={{ maxWidth: '600px', marginTop: '10px', margin: '5px', objectFit: 'contain' }} alt='images uploaded by user' src={eachOption.image_url} /></div>
         })}
       </div>
     </div>
