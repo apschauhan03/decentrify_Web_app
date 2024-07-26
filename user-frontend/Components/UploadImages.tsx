@@ -73,7 +73,7 @@ function UploadImages({txSignature,setTxSignature,pending,selectedFiles,setSelec
             </div>
             <div className=' w-full h-[40%] flex flex-wrap'>
                 {selectedFiles.map((file, index) => (
-                    <img style={{ maxWidth: '180px', marginTop: '10px', margin: '5px', objectFit: 'contain' }} alt='images uploaded by user' src={URL.createObjectURL(file)} />
+                    <img key={index} style={{ maxWidth: '180px', marginTop: '10px', margin: '5px', objectFit: 'contain' }} alt='images uploaded by user' src={URL.createObjectURL(file)} />
                 ))}
             </div>
         </div>
