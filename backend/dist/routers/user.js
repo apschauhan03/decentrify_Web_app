@@ -167,7 +167,7 @@ router.post("/task", middleware_1.authMiddleWare, (req, res) => __awaiter(void 0
         const response = yield tx.task.create({
             data: {
                 title: parsedBody.data.title,
-                amount: 0.1 * 1000000000,
+                amount: 0.1 * 100000000,
                 signature: parsedBody.data.signature,
                 user_id: userId,
             },
