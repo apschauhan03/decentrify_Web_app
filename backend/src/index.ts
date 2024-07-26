@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import express, { Request, Response } from 'express';
 import userRouter from "./routers/user";
 import workerRouter from "./routers/worker";
@@ -15,5 +17,5 @@ app.use("/v1/worker",workerRouter);
 
 
 app.listen(PORT,()=>{
-  console.log("server running at port 3000")
+  console.log("server running at port ",PORT)
 });
